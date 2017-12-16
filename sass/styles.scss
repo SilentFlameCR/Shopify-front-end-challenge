@@ -1,0 +1,157 @@
+/*fonts*/
+$font: Helvetica, sans-serif;
+/*colors*/
+$white: #FFFFFF;
+$green: #7AB55C;
+$grey: #7B7B7B;
+$purple-light: #5c6ac4;
+$purple-dark: #000639;
+$red: #C23628;
+/*font-sizes*/
+$font-title: 24px;
+$font-field: 16px;
+
+* {
+	font-family: $font;
+}
+
+#error {
+	display: none;
+}
+
+body {
+	background-color: $purple-dark;
+}
+
+h1, p, button {
+	color: $white;
+}
+
+h1 {
+	font-size: $font-title;
+
+	&:after {
+		margin-top: 20px;
+		display:block;
+		content: "";
+		border-top: 4px solid $green;
+		width: 25px;
+		margin-bottom: 40px;
+	}
+}
+
+p, input {
+	font-size: $font-field;
+}
+
+button {
+	background-color: $purple-light;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 40px auto 10px auto;
+}
+
+#error {
+	display: none;
+	color: $red;
+	margin-bottom: 10px;
+	font-size: 14px;
+	
+}
+
+footer {
+	width:100%;
+    text-align:center;
+
+    
+
+    p {
+    	position: absolute;
+    	left: 0; bottom: 0; right: 0;
+		margin-bottom: 20px;
+		text-decoration: underline;
+	}
+}
+
+
+
+/*form styles*/
+
+.header {
+	margin-bottom: 20px;
+}
+
+input, select {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	color: $grey;
+	margin-bottom: 20px;
+}
+
+.dropdown {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+
+	.wrapper {
+		width: 80%;
+	}
+
+	.email, .dropdown {
+		display: inline-block;
+	}
+
+	.email {
+		width: 58%;
+		margin-right: 1%;
+	}
+
+	.dropdown {
+		width: 40%;
+	}
+
+	input, select {
+		
+		height: 50px;
+	}
+
+	input {
+		
+		
+	}
+
+	select {
+		
+	}
+
+	button {
+		height: 50px;
+		
+	}
+
+	.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-mobile {
+	display: none;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.wrapper {
+		width: 70%;
+	}
+}

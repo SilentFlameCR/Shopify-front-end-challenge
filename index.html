@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopify Front-End Goodness</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+<body>
+    <div class="wrapper">
+    	<!-- title -->
+    	<h1>Stay up to date with ecommerce trends with Shopify's newsletter</h1>
+
+    	<p class="header">Subscribe for free marketing tips</p>
+
+    	<!-- form -->
+    	<form id="signUp" method="post" onsubmit="validateForm(); return false">
+    		<div class="email">
+                
+	            <input placeholder="Email Address" type="text" name="email" id="email">
+	            
+
+            </div>    
+
+            <div class="dropdown">  
+                <select name="career" id="career">
+                	<option value="" disabled selected>Interested in...</option>
+                	<option value="Front-End Development">Front-End Development</option>
+                	<option value="Back-End Development">Back-End Development</option>
+                	<option value="Web Design">Web Design</option>
+                </select>
+            </div>
+                
+            <span id="error">Please enter a valid email address</span>
+
+            <div class="dropdown-mobile">  
+                <select name="career" id="career2">
+                	<option value="" disabled selected>Interested in...</option>
+                	<option value="Front-End Development">Front-End Development</option>
+                	<option value="Back-End Development">Back-End Development</option>
+                	<option value="Web Design">Web Design</option>
+                </select>
+            </div>
+
+            <div class="submit">
+                	
+                <button type="submit" name="submit">Sign up now</button>
+                	
+            </div>
+            
+
+    	</form>
+
+    	<!-- footer -->
+    	<footer>
+    		<p align="center">Unsubscribe</p>
+    	</footer>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
